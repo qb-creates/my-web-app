@@ -7,6 +7,7 @@ import { Component, Output } from '@angular/core';
 })
 export class AffirmationComponent {
   @Output() affirmationOutput!: string;
+  @Output() modeOutput!: string;
 
   randPrevious:number = 0;
   affirmation:string[] = [
@@ -26,5 +27,9 @@ export class AffirmationComponent {
   generate() {
     let rand = Math.floor(Math.random() * (1 + 4  - 0) + 0);
     this.affirmationOutput = this.affirmation[rand];  
+  }
+
+  activateMode(){
+    this.modeOutput = "Bad B***h Mode Activated!!!!!!!"
   }
 }

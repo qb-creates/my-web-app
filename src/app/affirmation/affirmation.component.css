@@ -1,4 +1,10 @@
-#affirmation-text{
+.affirmation-text{
     color: white;
     font-size: 30px;
+}
+.button-container{
+    margin-top: 15px;
+}
+.button{
+    font-size: 25px;
 }
